@@ -2,6 +2,7 @@
   padding: 15px;
   position: fixed;
   width: 100%;
+  max-width: 1920px;
   &__logo {
     font-size: 20px;
     font-family: "Josefin Slab", serif;
@@ -63,7 +64,8 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(250, 142, 160, 0.2);
-    transform: translateX(0);
+    left: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
 
     &__list {
@@ -82,7 +84,7 @@
         transform: scale(0.4);
         right: -40px;
         top: -20px;
-        opacity: 0.3;
+        opacity: 0.1;
       }
 
       &__item__link {
@@ -102,6 +104,40 @@
         }
       }
     }
+  }
+
+  &__nav__desktop {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+  }
+  &__modal__list__desktop {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  &__modal__list__item__link__desktop {
+    font-size: 14px;
+    color: $dark;
+    transition: all 0.3s;
+    position: relative;
+    font-family: "Open Sans", "sans-serif";
+  }
+  &__modal__list__item__link__desktop::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    background-color: $main-pink;
+    height: 2px;
+    transition: all 0.3s;
+  }
+  &__modal__list__item__link__desktop:hover::before {
+    width: 100%;
   }
 }
 
@@ -133,5 +169,70 @@
 
   &:hover::after {
     transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 575px) {
+  .header__hamburger__box,
+  .header__modal {
+    display: none;
+  }
+  .header__nav__desktop {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header__logo {
+    font-size: 30px;
+  }
+  .header__nav__desktop {
+    top: 20px;
+    right: 20px;
+  }
+  .header__modal__list__item__link__desktop {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 30px;
+  }
+
+  .header__logo {
+    font-size: 40px;
+  }
+  .header__nav__desktop {
+    top: 30px;
+    right: 30px;
+  }
+  .header__modal__list__item__link__desktop {
+    font-size: 20px;
+  }
+  .header__modal__list__desktop {
+    gap: 40px;
+  }
+}
+@media (min-width: 1700px) {
+  .header {
+    padding: 50px;
+  }
+
+  .header__logo {
+    font-size: 50px;
+  }
+  .header__nav__desktop {
+    top: 50px;
+    right: 50px;
+  }
+  .header__modal__list__item__link__desktop {
+    font-size: 25px;
+  }
+  .header__modal__list__desktop {
+    gap: 60px;
   }
 }
