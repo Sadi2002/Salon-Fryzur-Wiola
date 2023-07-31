@@ -35,3 +35,88 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 575px) {
+  .about-us__box {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  .about-us img {
+    width: 45%;
+    border: 2px solid $dark;
+    padding: 20px;
+  }
+}
+@media (min-width: 700px) {
+  .about-us__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .about-us__title {
+    font-size: 30px;
+  }
+  .about-us__text {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+@media (min-width: 800px) {
+  .about-us__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__text {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .about-us__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-us__text {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .about-us__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us__text {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-us {
+    padding: 0 100px;
+  }
+  .about-us__box {
+    gap: 75px;
+  }
+  .about-us__text {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+  .about-us__title {
+    font-size: 50px;
+  }
+  .about-us img {
+    width: 30%;
+  }
+}
+@media (min-width: 1800px) {
+  .about-us__text {
+    font-size: 35px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+}

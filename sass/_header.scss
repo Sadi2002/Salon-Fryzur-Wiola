@@ -233,6 +233,9 @@
   .header__modal__list__desktop {
     gap: 40px;
   }
+  .header {
+    box-shadow: 0 -15px 50px rgba(250, 142, 160, 0.4);
+  }
 }
 @media (min-width: 1700px) {
   .header__logo {
