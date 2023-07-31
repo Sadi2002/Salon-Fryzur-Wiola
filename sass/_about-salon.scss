@@ -1,0 +1,37 @@
+.about-us {
+  padding: 0 20px;
+  width: 100%;
+
+  &__title {
+    color: $dark;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    font-family: math;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -3px;
+      background-color: $main-pink;
+      width: 10%;
+      height: 2px;
+    }
+  }
+
+  & img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $dark;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+}
