@@ -1,0 +1,230 @@
+.under-header {
+  width: 100%;
+  padding-top: 50px;
+  height: auto;
+  position: relative;
+
+  & img {
+    width: 100%;
+    filter: blur(2px);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    z-index: 1001;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+
+    &__subtitle__desktop {
+      font-size: 20px;
+      font-family: math;
+      margin-bottom: 50px;
+      line-height: 29px;
+      display: none;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 28px;
+      font-family: math;
+      color: $bg-color;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 20px;
+      font-family: math;
+      color: $bg-color;
+      margin-bottom: 50px;
+    }
+  }
+  & button {
+    background-color: transparent;
+    border: none;
+  }
+  &__btn {
+    color: $dark;
+    font-size: 16px;
+    border: 1px solid $bg-color;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    background-color: $bg-color;
+    border-radius: 8px;
+  }
+  &__btn:hover {
+    color: $main-pink;
+    background-color: transparent;
+    border-color: $main-pink;
+  }
+
+  & i {
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    color: $bg-color;
+    animation: arrowDown 2s infinite;
+    animation-fill-mode: both;
+  }
+}
+
+.overall {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: calc(100% - 50px);
+  z-index: 1000;
+}
+
+@media (min-width: 450px) {
+  .under-header__box__title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 500px) {
+  .under-header img {
+    height: 470px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 575px) {
+  .under-header i {
+    display: none;
+  }
+
+  .overall {
+    display: none;
+  }
+
+  .under-header__box {
+    position: static;
+    transform: translate(0);
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .under-header img {
+    width: 40%;
+    filter: blur(0);
+    height: auto;
+    border-radius: 30px;
+    border: 2px solid $dark;
+    padding: 20px;
+  }
+
+  .under-header__box__title,
+  .under-header__box__subtitle {
+    color: $dark;
+    text-align: left;
+  }
+
+  .under-header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 100px 15px;
+  }
+
+  .under-header__btn {
+    background-color: $dark;
+    border-color: $dark;
+    color: $bg-color;
+
+    &:hover {
+      background-color: $main-pink;
+      color: $bg-color;
+    }
+  }
+
+  .under-header__box__title {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 768px) {
+  .under-header__box__title {
+    font-size: 32px;
+  }
+  .under-header__box__subtitle {
+    display: none;
+  }
+  .under-header__box__subtitle__desktop {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .under-header__box__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .under-header {
+    padding: 100px 30px;
+  }
+  .under-header__box__title {
+    font-size: 50px;
+  }
+  .under-header__box__subtitle__desktop {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .under-header__btn {
+    font-size: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .under-header__box__subtitle__desktop {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1600px) {
+  .under-header__box__title {
+    font-size: 65px;
+  }
+  .under-header__box__subtitle__desktop {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 80px;
+  }
+  .under-header__btn {
+    font-size: 30px;
+    padding: 15px 20px;
+  }
+  .under-header {
+    padding: 150px 30px 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  .under-header__box__title {
+    font-size: 72px;
+  }
+  .under-header img {
+    border: 3px solid $dark;
+    padding: 30px;
+    border-radius: 80px;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}

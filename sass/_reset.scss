@@ -19,3 +19,9 @@ body {
   min-height: 100vh;
   background-color: $bg-color;
 }
+
+i {
+  font-family: "FontAwesome";
+  font-style: normal;
+  z-index: 1001;
+}
