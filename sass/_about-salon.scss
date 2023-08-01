@@ -92,6 +92,9 @@
     font-size: 30px;
     line-height: 50px;
   }
+  .about-us img {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -108,9 +111,6 @@
   }
   .about-us__title {
     font-size: 50px;
-  }
-  .about-us img {
-    width: 30%;
   }
 }
 @media (min-width: 1800px) {

@@ -529,6 +529,7 @@ i {
   }
   .under-header__box__title {
     font-size: 50px;
+    max-width: 700px;
   }
   .under-header__box__subtitle__desktop {
     font-size: 23px;
@@ -539,6 +540,15 @@ i {
   }
   .under-header__box__subtitle__desktop {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .under-header__box__title {
+    font-size: 56px;
+  }
+  .under-header img {
+    width: 37%;
   }
 }
 
@@ -719,6 +729,9 @@ i {
     font-size: 30px;
     line-height: 50px;
   }
+  .about-us img {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -735,9 +748,6 @@ i {
   }
   .about-us__title {
     font-size: 50px;
-  }
-  .about-us img {
-    width: 30%;
   }
 }
 

@@ -181,6 +181,7 @@
   }
   .under-header__box__title {
     font-size: 50px;
+    max-width: 700px;
   }
   .under-header__box__subtitle__desktop {
     font-size: 23px;
@@ -191,6 +192,15 @@
   }
   .under-header__box__subtitle__desktop {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .under-header__box__title {
+    font-size: 56px;
+  }
+  .under-header img {
+    width: 37%;
   }
 }
 
