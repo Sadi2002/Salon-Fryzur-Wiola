@@ -86,7 +86,7 @@
         content: url("/img/nozyczki.png");
         position: absolute;
         transform: scale(0.4);
-        right: -40px;
+        right: 0px;
         top: -20px;
         opacity: 0.1;
       }
@@ -95,6 +95,7 @@
         color: $dark;
         position: relative;
         transition: all 0.3s;
+        font-family: "Roboto", sans-serif;
 
         &:hover {
           color: $main-pink;
@@ -132,7 +133,7 @@
     color: $dark;
     transition: all 0.4s;
     position: relative;
-    font-family: "Open Sans", "sans-serif";
+    font-family: "Roboto", sans-serif;
 
     &:hover {
       color: $main-pink;
@@ -194,9 +195,9 @@
     display: flex;
   }
 
-  .header {
-    box-shadow: none;
-  }
+  // .header {
+  //   box-shadow: none;
+  // }
 }
 
 @media (min-width: 768px) {

@@ -7,8 +7,9 @@
     font-size: 25px;
     text-align: center;
     position: relative;
-    font-family: math;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 30px;
+    font-weight: 400;
 
     &::before {
       content: "";
@@ -36,6 +37,18 @@
   }
 }
 
+@media (min-width: 400px) and (max-width: 575px) {
+  .about-us__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us img {
+    width: 60%;
+  }
+}
+
 @media (min-width: 575px) {
   .about-us__box {
     display: flex;
@@ -59,8 +72,8 @@
     font-size: 30px;
   }
   .about-us__text {
-    font-size: 20px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 @media (min-width: 800px) {
@@ -104,13 +117,12 @@
   .about-us__box {
     gap: 75px;
   }
-  .about-us__text {
-    font-size: 35px;
-    line-height: 50px;
-    margin-bottom: 50px;
-  }
   .about-us__title {
     font-size: 50px;
+  }
+  .about-us__text {
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 @media (min-width: 1800px) {
