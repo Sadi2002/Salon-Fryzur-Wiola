@@ -117,8 +117,8 @@ i {
   background-color: #fdf1fd;
   border-radius: 0 0 20px 20px;
   left: 70%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
   overflow: hidden;
 }
 
