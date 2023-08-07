@@ -1068,4 +1068,46 @@ i {
     left: 60px;
   }
 }
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    width: 100% !important;
+    height: 600px;
+  }
+  .carousel-control-next-icon {
+    right: -60px;
+  }
+  .carousel-control-prev-icon {
+    left: -60px;
+  }
+  .gallery__btn {
+    width: 30%;
+    margin-top: 50px;
+  }
+  .gallery__title {
+    font-size: 30px;
+  }
+  .gallery {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .carousel-item img {
+    width: 80% !important;
+    height: 700px;
+  }
+  .gallery__btn {
+    width: 15%;
+  }
+  .gallery__container {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
