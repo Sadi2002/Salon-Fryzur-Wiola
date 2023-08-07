@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   background-color: #fdf1fd;
   font-family: "Roboto", sans-serif;
+  height: 1000vh;
 }
 
 i {
@@ -139,16 +140,6 @@ i {
   height: 100%;
   font-size: 20px;
   list-style: none;
-}
-
-.header__modal__list::before {
-  content: url("/img/nozyczki.png");
-  position: absolute;
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
-  right: 0px;
-  top: -20px;
-  opacity: 0.1;
 }
 
 .header__modal__list__item__link {
@@ -783,6 +774,7 @@ i {
 .what-we-do {
   margin-top: 50px;
   padding: 0 20px;
+  margin-bottom: 50px;
 }
 
 .what-we-do__title {
@@ -974,6 +966,106 @@ i {
   }
   .what-we-do__container {
     gap: 50px;
+  }
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__title {
+  color: #272727;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.gallery__title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -3px;
+  background-color: #fa8ea0;
+  width: 10%;
+  height: 2px;
+}
+
+.gallery__btn {
+  width: 50%;
+  background: transparent;
+  border: 1px solid #fa8ea0;
+  margin-top: 30px;
+  padding: 10px 0px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gallery__btn a {
+  color: #272727;
+  font-size: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gallery__btn:hover {
+  background-color: #272727;
+  border: 1px solid #272727;
+}
+
+.gallery__btn:hover a {
+  color: #fdf1fd;
+}
+
+.carousel-item img {
+  width: 90% !important;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: absolute;
+  right: 30px;
+  -webkit-filter: invert(62%) sepia(89%) saturate(422%) hue-rotate(303deg) brightness(104%) contrast(96%);
+          filter: invert(62%) sepia(89%) saturate(422%) hue-rotate(303deg) brightness(104%) contrast(96%);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.carousel-control-prev-icon {
+  left: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #272727;
+}
+
+@media (min-width: 500px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .carousel-control-next-icon {
+    right: 60px;
+  }
+  .carousel-control-prev-icon {
+    left: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */

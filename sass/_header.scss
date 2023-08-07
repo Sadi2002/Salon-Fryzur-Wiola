@@ -82,14 +82,14 @@
       font-size: 20px;
       list-style: none;
 
-      &::before {
-        content: url("/img/nozyczki.png");
-        position: absolute;
-        transform: scale(0.4);
-        right: 0px;
-        top: -20px;
-        opacity: 0.1;
-      }
+      // &::before {
+      //   content: url("/img/nozyczki.png");
+      //   position: absolute;
+      //   transform: scale(0.4);
+      //   right: 0px;
+      //   top: -20px;
+      //   opacity: 0.1;
+      // }
 
       &__item__link {
         color: $dark;
