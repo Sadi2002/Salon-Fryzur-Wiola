@@ -25,6 +25,7 @@
     gap: 10px;
     justify-content: center;
     margin-top: 30px;
+    align-items: center;
 
     & i {
       font-family: "FontAwesome";
@@ -38,6 +39,11 @@
       font-size: 16px;
       color: $dark;
       font-weight: 700;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $main-pink;
+      }
     }
   }
 
@@ -53,6 +59,11 @@
       align-items: center;
       gap: 10px;
       color: $dark;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $main-pink;
+      }
     }
   }
 
@@ -67,5 +78,54 @@
     font-size: 16px;
     margin-bottom: 0;
     font-weight: 700;
+  }
+
+  & iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & iframe {
+      width: 90%;
+      border-radius: 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__box {
+      display: flex;
+      gap: 50px;
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    &__title {
+      font-size: 40px;
+    }
+  }
+  .contact__address i,
+  .contact__fb i {
+    font-size: 40px;
+  }
+
+  .contact__address,
+  .contact__fb {
+    gap: 20px;
+  }
+
+  .contact__address a,
+  .contact__fb p {
+    font-size: 22px;
   }
 }

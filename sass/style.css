@@ -1143,6 +1143,9 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__address i {
@@ -1158,6 +1161,12 @@ i {
   font-size: 16px;
   color: #272727;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__address a:hover {
+  color: #fa8ea0;
 }
 
 .contact__fb {
@@ -1183,6 +1192,12 @@ i {
           align-items: center;
   gap: 10px;
   color: #272727;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__fb a:hover {
+  color: #fa8ea0;
 }
 
 .contact__fb i {
@@ -1196,5 +1211,98 @@ i {
   font-size: 16px;
   margin-bottom: 0;
   font-weight: 700;
+}
+
+.contact iframe {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact iframe {
+    width: 90%;
+    border-radius: 20px;
+  }
+  .contact__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__title {
+    font-size: 40px;
+  }
+  .contact__address i,
+  .contact__fb i {
+    font-size: 40px;
+  }
+  .contact__address,
+  .contact__fb {
+    gap: 20px;
+  }
+  .contact__address a,
+  .contact__fb p {
+    font-size: 22px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #272727;
+  height: 100px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  color: #fdf1fd;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.footer__text a {
+  color: #fa8ea0;
+}
+
+@media (min-width: 575px) {
+  .footer__text {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__text {
+    font-size: 20px;
+    padding: 0 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
